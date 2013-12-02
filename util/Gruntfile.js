@@ -4,13 +4,24 @@ module.exports = function(grunt) {
 	
 	grunt.initConfig({
 		less: {
-
+			dev: {
+				options: {
+					paths: ["../css/less"],
+					sourceMap: true
+				},
+				files: {
+					"../css/bootstrap.css": "../css/less/bootstrap.less" 
+				}
+			}
 		},
 		requirejs: {
 
 		},
 		watch: {
-
+			less: {
+				files: ["../css/less/*.less"],
+				tasks: ["less:dev"]
+			}
 		}
 	});
 
