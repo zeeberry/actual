@@ -1,0 +1,11 @@
+{
+	"name": "actual",
+	"version": "1.0",
+	"dependencies": {
+		"requirejs": "latest",
+		"backbone": "latest",
+		"underscore": "latest",
+		"jquery": "latest",
+		"r.js": "latest" 
+	}
+}
