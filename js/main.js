@@ -9,7 +9,10 @@ require.config({
 	paths: {
 		'jquery': 'libs/jquery/jquery-2.0.3.min',
 		'underscore': 'libs/underscore/underscore-min',
-		'backbone': 'libs/backbone/backbone-min'
+		'backbone': 'libs/backbone/backbone-min',
+		'app_view': 'views/app',
+		'weather_model': 'models/weather',
+		'weather_service': 'controllers/services/weather_service'
 	},
 	shim: {
 		
@@ -23,6 +26,6 @@ require.config({
 	}
 });
 
-require([ 'views/app' ], function(AppView){
+require([ 'app_view' ], function(AppView){
 	new AppView;
 });
